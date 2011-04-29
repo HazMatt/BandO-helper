@@ -1,0 +1,10 @@
+This is a helper app for the boardgame Baltimore and Ohio:
+
+http://boardgamegeek.com/boardgame/43307/baltimore-and-ohio
+
+This game can take 3-4 hours to play.  With an assistant app like this, you can shave off 60-90 minutes.
+
+This app makes heavy use of jquery and jquery ui.
+
+If you have played B&O, it should be obvious how to use.  If it's not easy to use, then I need to redesign it.
+

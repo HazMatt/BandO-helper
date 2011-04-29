@@ -1,0 +1,162 @@
+
+
+/* train buttons */
+/*The !important overrides the ui-icon definition for background-image*/
+.train1 {
+  background-image: url("bando_images/train_1_icon.jpg") !important;
+  width: 36px;
+  height:36px;
+  display:none;
+}
+.train2 {
+  background-image: url("bando_images/train_2_icon.jpg") !important;
+  width: 36px;
+  height:36px;
+  display:none;
+}
+.train3 {
+  background-image: url("bando_images/train_3_icon.jpg") !important;
+  width: 36px;
+  height:36px;
+  display:none;
+}
+.train4 {
+  background-image: url("bando_images/train_4_icon.jpg") !important;
+  width: 36px;
+  height:36px;
+  display:none;
+}
+.train5 {
+  background-image: url("bando_images/train_5_icon.jpg") !important;
+  width: 36px;
+  height:36px;
+  display:none;
+}
+.train6 {
+  background-image: url("bando_images/train_6_icon.jpg") !important;
+  width: 36px;
+  height:36px;
+  display:none;
+}
+
+.small-button { 
+  font-size: .8em;
+  margin: 10px;
+}
+
+.tiny-txt {
+  font-size: .6em;
+}
+
+h2.bando { font-family:"Verdana"; }
+
+#debug_info { 
+  font-family:"Verdana";
+  position:fixed;
+  left:850px;
+  top:300px;
+  margin:10px;
+/*  float:left;*/
+}
+
+#train_list { 
+  font-family:"Verdana";
+  position:fixed;
+  margin: 10px;
+  top: 47px;
+  left:350px;
+  list-style-type: none;
+  padding: 0;
+/*  float:left;*/
+}
+
+#train_list li { 
+  margin: 0 3px 3px 3px; 
+  padding: 0.2em; 
+/*  padding-left: 1.5em; */
+/*  font-size: 1.4em; 
+  height: 18px; 
+*/}
+
+div.train_icons {
+  float:left;
+}
+
+div.trains_txt {
+  float:left;
+}
+
+div#buy_train_button {
+/*  float:left;*/
+  position:fixed;
+  top: 47px;
+  left: 480px;
+/*  top:50px;*/
+}
+
+/* overrides */
+div#accordion {
+/*  float:left;*/
+  position:fixed;
+  top: 35px;
+  left: 0px;
+  margin: 20px;
+}
+.ui-accordion { 
+  width: 325px;
+/*  float:left;*/
+ }
+div.ui-accordion-content {
+  height: 40px;
+}
+
+a:hover {font-weight:bold;}
+a:link.white {color:black; background-color:white;}
+a:visited.white {color:black; background-color:white;}
+a:active.white {color:black; background-color:white;}
+a:link.blue {color:#f6f6f6; background-color:blue;}
+a:visited.blue {color:#f6f6f6; background-color:blue;}
+a:active.blue {color:#f6f6f6; background-color:blue;}
+a:link.pink {color:#f6f6f6; background-color:#FF00CC;}
+a:visited.pink {color:#f6f6f6; background-color:#FF00CC;}
+a:active.pink {color:#f6f6f6; background-color:#FF00CC;}
+a:link.brown {color:#f6f6f6; background-color:#663300;}
+a:visited.brown {color:#f6f6f6; background-color:#663300;}
+a:active.brown {color:#f6f6f6; background-color:#663300;}
+a:link.green {color:#f6f6f6; background-color:green;}
+a:visited.green {color:#f6f6f6; background-color:green;}
+a:active.green {color:#f6f6f6; background-color:green;}
+a:link.purple {color:#f6f6f6; background-color:#660099;}
+a:visited.purple {color:#f6f6f6; background-color:#660099;}
+a:active.purple {color:#f6f6f6; background-color:#660099;}
+a:link.red {color:#f6f6f6; background-color:red;}
+a:visited.red {color:#f6f6f6; background-color:red;}
+a:active.red {color:#f6f6f6; background-color:red;}
+a:link.gray {color:#f6f6f6; background-color:gray;}
+a:visited.gray {color:#f6f6f6; background-color:gray;}
+a:active.gray {color:#f6f6f6; background-color:gray;}
+.yellow {background-color:yellow; color:black;}
+.orange {background-color:orange; color:black;}
+
+/*.blue {color:#fff; background-color:blue; }*/
+/*.pink {background-color:#FF00CC; color:white;}*/
+/*.brown {background-color:#663300; color:white;}*/
+/*.green {background-color:green; color:white;}*/
+/*.purple {background-color:#660099; color:white;}*/
+/*.whitebg {background-color:white; color:black;}*/
+/*.red {background-color:red; color:white;}*/
+/*.gray {background-color:gray; color:white;}*/
+
+/* company list */
+option.blue {background-color:blue; color:white;}
+option.pink {background-color:#FF00CC; color:white;}
+option.yellow {background-color:yellow; color:black;}
+option.orange {background-color:orange; color:black;}
+option.brown {background-color:#663300; color:white;}
+option.green {background-color:green; color:white;}
+option.purple {background-color:#660099; color:white;}
+option.white {background-color:white; color:black;}
+option.red {background-color:red; color:white;}
+option.gray {background-color:gray; color:white;}
+
+
