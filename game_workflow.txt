@@ -1,0 +1,29 @@
+Open a company
+  - UI
+    - select initial valuation, list based on tech lvl
+    - update stock price display
+  - internat
+    - set stock price
+    - set opened flag
+  
+Buy a train
+  - UI:
+    - select next train
+    - add train to company's display
+  - internal:
+    - add train to company
+    - remove train from available list
+    
+Sell a train
+  - UI:
+    - confirmation
+    - remove train from company display
+  - internal:
+    - remove train from company
+  
+Add cities
+  - UI:
+    - select cities
+    - add cities to company display
+  - internal:
+    - add cities to company obj

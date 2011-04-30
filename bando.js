@@ -64,6 +64,7 @@ $(document).ready(function() {
     this.stock_value = 0;
     this.last_profit = 0;
     this.cocolor = co_color;
+    this.opened = false;
   }
 
   var co_bando = new company("Baltimore & Ohio", "Baltimore", "blue", "co_bando");
@@ -139,6 +140,16 @@ $(document).ready(function() {
                       'Roanoke', 'Fort Wayne', 'Indianapolis', 'Cincinnati', 'Louisville',
                       'Lexington', 'Chicago', 'Sprintfield', 'Cario');
                       
+ 
+  // var start_valuations = new Array();
+  var valuations = {
+    1:new Array(55, 60, 66),
+    2:new Array(60, 66, 74),
+    3:new Array(66, 74, 82),
+    4:new Array(74, 82, 91),
+    5:new Array(82, 91, 100)
+  };
+  // start_valuations[]
   // Tech 1: $55, $60, S66 
   // Tech2: $60, $66, $74 
   // Tech 3: $66, $74, $82 
