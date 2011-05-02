@@ -149,16 +149,12 @@ $(document).ready(function() {
     4:new Array(74, 82, 91),
     5:new Array(82, 91, 100)
   };
-  // start_valuations[]
-  // Tech 1: $55, $60, S66 
-  // Tech2: $60, $66, $74 
-  // Tech 3: $66, $74, $82 
-  // Tech 4: S74, $82, $91 
-  // Tech 5: $82, $91, $100
        
-  // ** add city **
-  // co_bando.cities.push();
 
+  // initial state and setup:
+  $(".trains_txt").hide();
+
+  // functions
   function trash_train(company_id, train) {
     var train_id = $.inArray("1", company_id.trains);
     company_id.trains.splice(train_id, 1);
@@ -169,7 +165,8 @@ $(document).ready(function() {
     $('#debug_info').html(
       '<b>' + co_object.coname + '</b><br>Trains: ' + debug_train_text(co_object.trains) +
       '<br>Cities: ' + co_object.cities + '<br>Stock Price: ' + co_object.stock_value +
-      '<br>Last Profit: ' + co_object.last_profit + '<br>Coal: ' + co_object.coal);
+      '<br>Last Profit: ' + co_object.last_profit + '<br>Coal: ' + co_object.coal +
+      '<br>Opened?: ' + co_object.opened);
   }
   
   // put together list of a companies trains as a string
@@ -198,9 +195,12 @@ $(document).ready(function() {
     active: '.selected',
     // *** stuff to do when a company is selected ***
 	  change: function(event, ui) { 
+	    var comp = companies[$("#accordion").accordion("option", "active")]; 
 	    $("#buy_next_train")
 	          .button( "option", "label", "Buy Train for " + ui.newHeader.text() );
-	    $("#buy_next_train").button( "option", "disabled", false);
+	    if (comp.opened) { 
+  	    $("#buy_next_train").button( "option", "disabled", false);
+	    };
       console.log(companies[$("#accordion").accordion("option", "active")]);
       display_debug();
   	        
@@ -286,6 +286,14 @@ $(document).ready(function() {
 				$( this ).dialog( "close" );
 			}
 		}
+	});
+	
+	$(".open-button").button();
+	
+	$(".open-button").click(function() {
+    // var comp = companies[$("#accordion").accordion("option", "active")];
+	  (companies[$("#accordion").accordion("option", "active")]).opened = true;
+    display_debug();
 	});
 	
 	function current_train_list () {

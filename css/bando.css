@@ -44,6 +44,11 @@
   margin: 10px;
 }
 
+.open-button { 
+  font-size: .6em;
+/*  margin: 10px;*/
+}
+
 .tiny-txt {
   font-size: .6em;
 }
